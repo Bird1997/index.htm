@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Creating a Static Website Using Amazon S3</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <style>
+    body {
+      padding-top: 5rem;
+    }
+
+    .starter-template {
+      padding: 3rem 1.5rem;
+      text-align: center;
+    }
+
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">My Static Website</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+      aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">Dropdown</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown01">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <main role="main" class="container">
+
+    <div class="starter-template">
+      <h1>Employment History</h1>
+      <h1>Michael Pairett</h1>
+      <h1> 540-604-8184</h1>
+      <p class="lead">Work Experience
+
+Foreman
+Muller Inc. – Manassas, VA July 2021 – Present
+Supervises the activities of a four-person team
+Directs installation of erosion control and safety equipment
+Communicates daily activities and goals to team members
+Ensures completion of daily sheets, time cards and safety compliance paperwork
+
+Foreman
+Crigger Contracting - Manassas, VA September 2020 to July 2021
+Loaded and unloaded equipment to support daily activities
+Operated multiple types of earth moving machinery
+
+Project Manager
+United Stone and Tile - Chantilly, VA 2019 to 2020
+Directly managed projects' budgets, schedules, material ordering, and delivery
+Assisted in submitting samples to general contractors
+Assisted in overviewing progress of individual crews
+Managed inventory and organization of the warehouse
+
+Parking Lot Sweeper/Assistant Supervisor
+Total Power Sweeping Service - Fredericksburg, VA 2016 to 2019
+Oversaw the cleaning of commercial properties
+Removed debris from sidewalks 
+Removed debris and trash from parking lots
+Assisted with the scheduling of personnel
+Directly planned routes
+Trained new employees
+
+Installer Miller Paneling
+Fiberglass Reinforced Plastic - Sterling, VA 2016 
+Install FRP paneling for industrial applications
+Install industrial grade bumper rails and handrails
+
+Installer Helper
+Dulles Glass and Mirror - Manassas, VA 2015 to 2016
+Directly assist with the installation of glass showers enclosures and mirrors
+Provided both residential and commercial glass services for customers
+Directly supported project lead glass installer and/or lead install team
+Worked as a subcontractor for large commercial jobs
+Coordinated directly with customers to resolve installation discrepancies
+Manually moved glass loads for installation and removal of up to 175 pounds
+Complied with all local, state, and federal guidelines for disposal of hazmat
+
+Laborer
+National Deconstruction - Gaithersburg, MD 2015 
+Assisted with the deconstruction of commercial buildings
+Individually hauled material loads up to 100 pounds unassisted
+Sorted scrap metals by type for recycling purposes
+Drove forklift and bobcat in support of deconstruction activities
+Complied with all local, state, and federal safety guidelines and for the disposal of hazmat
+
+Cook/Prep/Dishwasher
+Chipotle - Stafford, VA 2014 to 2015
+Cooked food to meet anticipated consumer demands
+Complied with local, state, and federal food preparation guidelines
+Sanitized cooking and preparation areas
+
+Education
+
+Information Technology 
+Strayer University-Virginia - Fredericksburg, VA
+January 2021 to Present
+Projected to Graduate 2024 
+Current GPA : 3.9
+Currently on Dean’s List
+Computer courses completed: CIS 106 - Introduction to Information Technology, CIS 110 - Computer Programming Design, and CIS 101 – Navigating a Digital World
+
+
+
+Certifications / Licenses
+
+Valid Driver’s License
+OSHA 30
+OSHA 10
+      </p>
+    </div>
+
+    <div class="starter-template alert alert-light" role="alert">
+      Navigation and search functions are intentionally not implemented.
+    </div>
+
+  </main><!-- /.container -->
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
